@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxu12vdxfqm6y"]
+
+[ext_resource type="Texture2D" uid="uid://q1o6vikiun27" path="res://assets/TestingPlayer.png" id="1_dbw6n"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uclol"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_dbw6n")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="QuentinOverworld" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(170, 84)
+sprite_frames = SubResource("SpriteFrames_uclol")
